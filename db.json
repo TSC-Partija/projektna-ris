@@ -1,0 +1,95 @@
+{
+    "userIdCounter": 2,
+    "groupIdCounter": 1,
+    "toDoIdCounter": 7,
+    "users": [
+        {
+            "id": 1,
+            "groupIds": [
+                1
+            ],
+            "username": "bruih",
+            "email": "bruih@example.com",
+            "password": "geslo"
+        },
+        {
+            "id": 2,
+            "groupIds": [
+                1
+            ],
+            "username": "supak",
+            "email": "supak@example.com",
+            "password": "geslo"
+        }
+    ],
+    "toDos": [
+        {
+            "id": 1,
+            "owner": 1,
+            "groupIds": [
+                1
+            ],
+            "toDo": "nrdi projekt za ris :=D",
+            "finished": false,
+            "deadline": "22\/5\/2023"
+        },
+        {
+            "id": 2,
+            "owner": 2,
+            "groupIds": [],
+            "toDo": "majske igre :P",
+            "finished": false,
+            "deadline": "31\/5\/2023"
+        },
+        {
+            "id": 3,
+            "owner": 1,
+            "groupIds": [],
+            "toDo": "gsdfhsd",
+            "finished": true,
+            "deadline": ""
+        },
+        {
+            "id": 4,
+            "owner": 2,
+            "groupIds": [
+                1
+            ],
+            "toDo": "testetst",
+            "finished": false,
+            "deadline": "2023-06-11"
+        },
+        {
+            "id": 5,
+            "owner": 2,
+            "groupIds": [],
+            "toDo": "nekaj",
+            "finished": true,
+            "deadline": "2023-10-05"
+        },
+        {
+            "id": 6,
+            "owner": 1,
+            "groupIds": [],
+            "toDo": "nekej posku\u0161am",
+            "finished": true,
+            "deadline": "2023-05-06"
+        },
+        {
+            "id": 7,
+            "owner": 1,
+            "groupIds": [
+                1
+            ],
+            "toDo": "oknsgoajhgjpolkadgjiobadsihfvaewh",
+            "finished": true,
+            "deadline": "2024-01-19"
+        }
+    ],
+    "groups": [
+        {
+            "id": 1,
+            "name": "jabadabadu"
+        }
+    ]
+}
