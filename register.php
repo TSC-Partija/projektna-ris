@@ -1,34 +1,24 @@
-<?php
-// Start the session
-session_start();
-
-// Check if the user is authenticated
-if (isset($_SESSION['authenticated']) && $_SESSION['authenticated']) {
-  // If the user is not authenticated, redirect them to the login page
-  header('Location: view.php');
-  exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Prijava</title>
+        <title>Registracija</title>
         <link rel="stylesheet" type="text/css" href="st.css">
     </head>
     <body>
         <div class="main-div">
-            <h1>Prijava</h1>
-            <form method="post" action="login.php">
+            <h1>Registracija</h1>
+            <form method="POST" action="registerUser.php">
                 <label for="username">Up. ime:</label>
                 <input type="text" id="username" name="username"><br><br>
+                <label for="username">E-mail:</label>
+                <input type="text" id="email" name="email"><br><br>
                 <label for="password">Geslo:</label>
                 <input type="password" id="password" name="password"><br><br>
-                <button type="submit">PRIJAVA</button>
+                <button type="submit">REGISTRACIJA</button>
             </form>
-            <form action="register.php">
-                <button type="submit" style="margin-top: 10px">REGISTRIRAJ SE<SEct></SEct></button>
+            <form action="index.php">
+                <button type="submit" style="margin-top: 10px">NAZAJ</button>
             </form>
             <?php if (isset($_GET['error'])): ?>
                 <p><?php echo $_GET['error']; ?></p>

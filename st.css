@@ -21,8 +21,8 @@
   
   input[type=text], input[type=password] {
     padding: 10px;
-    border: none;
-    border-radius: 5px;
+    border: 1px black solid 5px;
+    /*border-radius: 5px;*/
     margin-bottom: 10px;
   }
   
@@ -36,6 +36,12 @@
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
-    background-color: #f44336;
+button:hover {
+    background-color: #f44300;
   }
+
+.main-div{
+  margin: auto;
+  width: 50%;
+  padding: 70px 0;
+}

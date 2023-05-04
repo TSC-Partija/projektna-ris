@@ -15,7 +15,32 @@ var i;
 for (i = 0; i < close.length; i++) {
   close[i].onclick = function() {
     var div = this.parentElement;
-    div.style.display = "none";
+    if(confirm("Ali ste prepričani, da želite izbrisati izbran vnos?")){
+      let data = {
+        id: div.getAttribute("id")
+      };
+      let xhr = new XMLHttpRequest();
+
+      // Set the request URL and method
+      xhr.open("POST", "deleteEntry.php");
+
+      // Set the request header to indicate the data type
+      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+      // Define a callback function to handle the server's response
+      xhr.onload = function() {
+          if (xhr.status === 200) {
+              location.reload();
+          }
+      };
+
+      // Convert the data to a JSON string and send it to the server
+      xhr.send(JSON.stringify(data));
+    }
+    else{
+      alert("Nje si zmišljavat!");
+    }
+    //div.style.display = "none";
   }
 }
 
@@ -23,7 +48,57 @@ for (i = 0; i < close.length; i++) {
 var list = document.querySelector('ul');
 list.addEventListener('click', function(ev) {
   if (ev.target.tagName === 'LI') {
-    ev.target.classList.toggle('checked');
+    //ev.target.classList.toggle('checked');
+    //console.log(ev.target.getAttribute("id"));
+    if(ev.target.classList.contains("checked")){
+      let data = {
+        finished: false,
+        id: ev.target.getAttribute("id")
+      }
+      //console.log(ev.target.getAttribute("id"));
+      // Create a new XMLHttpRequest object
+      let xhr = new XMLHttpRequest();
+
+      // Set the request URL and method
+      xhr.open("POST", "updateFinished.php");
+
+      // Set the request header to indicate the data type
+      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+      // Define a callback function to handle the server's response
+      xhr.onload = function() {
+          if (xhr.status === 200) {
+              location.reload();
+          }
+      };
+
+      // Convert the data to a JSON string and send it to the server
+      xhr.send(JSON.stringify(data));
+    }
+    else{
+      let data = {
+        finished: true,
+        id: ev.target.getAttribute("id")
+      }
+      // Create a new XMLHttpRequest object
+      let xhr = new XMLHttpRequest();
+
+      // Set the request URL and method
+      xhr.open("POST", "updateFinished.php");
+
+      // Set the request header to indicate the data type
+      xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+
+      // Define a callback function to handle the server's response
+      xhr.onload = function() {
+          if (xhr.status === 200) {
+              location.reload();
+          }
+      };
+
+      // Convert the data to a JSON string and send it to the server
+      xhr.send(JSON.stringify(data));
+    }
   }
 }, false);
 

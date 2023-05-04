@@ -1,7 +1,7 @@
 {
-    "userIdCounter": 2,
+    "userIdCounter": 3,
     "groupIdCounter": 1,
-    "toDoIdCounter": 7,
+    "toDoIdCounter": 12,
     "users": [
         {
             "id": 1,
@@ -20,6 +20,13 @@
             "username": "supak",
             "email": "supak@example.com",
             "password": "geslo"
+        },
+        {
+            "id": 3,
+            "username": "my_username",
+            "password": "geslo",
+            "email": "matijakeber437@gmail.com",
+            "groupIds": []
         }
     ],
     "toDos": [
@@ -56,7 +63,7 @@
                 1
             ],
             "toDo": "testetst",
-            "finished": false,
+            "finished": true,
             "deadline": "2023-06-11"
         },
         {
@@ -82,8 +89,34 @@
                 1
             ],
             "toDo": "oknsgoajhgjpolkadgjiobadsihfvaewh",
-            "finished": true,
+            "finished": false,
             "deadline": "2024-01-19"
+        },
+        {
+            "id": 10,
+            "owner": 3,
+            "groupIds": [],
+            "toDo": "aahahahahah",
+            "finished": true,
+            "deadline": "2023-06-03"
+        },
+        {
+            "id": 11,
+            "owner": 3,
+            "groupIds": [],
+            "toDo": "mojster na oknu",
+            "finished": false,
+            "deadline": "2023-05-19"
+        },
+        {
+            "id": 12,
+            "owner": 1,
+            "groupIds": [
+                1
+            ],
+            "toDo": "djlaaa",
+            "finished": true,
+            "deadline": "2023-05-04"
         }
     ],
     "groups": [

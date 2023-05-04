@@ -81,10 +81,10 @@ $_SESSION['expire_time'] = time() + $sess_expiration;
     foreach ($data['toDos'] as $toDo) {
         if($_SESSION['id'] == $toDo['owner']){
             if($toDo['finished']){
-                echo "<li class=checked><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
+                echo "<li id=\"" . $toDo['id'] . "\" class=checked><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
             }
             else{
-                echo "<li><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
+                echo "<li id=\"" . $toDo['id'] . "\"><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
             }
         }
         else{
@@ -94,19 +94,19 @@ $_SESSION['expire_time'] = time() + $sess_expiration;
                         foreach($data['groups'] as $groups){
                             if($groups['id'] == $value1){
                                 if($toDo['finished']){
-                                    echo "<li class=checked><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Skupina: " . $groups['name'] . " Končaj do: " . $toDo['deadline'] . "</li>";
+                                    echo "<li id=\"" . $toDo['id'] . "\" class=checked><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Skupina: " . $groups['name'] . " Končaj do: " . $toDo['deadline'] . "</li>";
                                 }
                                 else{
-                                    echo "<li><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Skupina: " . $groups['name'] . " Končaj do: " . $toDo['deadline'] . "</li>";
+                                    echo "<li id=\"" . $toDo['id'] . "\"><b style=\"text-transform: uppercase;\" >" . $toDo['toDo'] . "</b>" . " Skupina: " . $groups['name'] . " Končaj do: " . $toDo['deadline'] . "</li>";
                                 }
                                     break 3;
                             }
                         }
                         if($toDo['finished']){
-                            echo "<li class=checked><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
+                            echo "<li id=\"" . $toDo['id'] . "\" class=checked><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
                         }
                         else{
-                            echo "<li><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
+                            echo "<li id=\"" . $toDo['id'] . "\"><b style=\"text-transform: uppercase;\">" . $toDo['toDo'] . "</b>" . " Končaj do: " . $toDo['deadline'] . "</li>";
                         }
                         break 2;
                     }
@@ -118,5 +118,5 @@ $_SESSION['expire_time'] = time() + $sess_expiration;
     ?>
 </ul>
 <h7 class="footer" style="margin-bottom: 35px">Prijavljen kot: <?= $_SESSION['username'] ?></h7>
-<a class="footer" href="logout.php">Odjava</a>
+<a class="footer" href="logout.php">ODJAVA</a>
 <script src="script.js"></script>

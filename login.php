@@ -26,7 +26,7 @@
             exit;
         } else {
             // Invalid credentials, show an error message
-            header("Location: index.php?error=Invalid%20login%20credentials");
+            header("Location: index.php?error=Napačni%20prijavni%20podatki!");
             exit;
         }
     }
