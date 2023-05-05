@@ -28,7 +28,7 @@ if (!isset($_SESSION['authenticated']) || $_SESSION['authenticated'] !== true) {
                         $data = json_decode($json_string, true);
                         foreach ($data['groups'] as $groups) {
                             if(($_SESSION["id"]) == $groups["owner"]){
-                                echo "<option value=" . $value1 . " id=" . $value1 . ">" . $groups['name'] . "</option>";
+                                echo "<option value=" . $groups["id"] . " id=\"" . $groups["id"] . "\"" . ">" . $groups['name'] . "</option>";
                             }
                         }
 

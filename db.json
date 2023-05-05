@@ -27,14 +27,20 @@
             "username": "my_username",
             "password": "geslo",
             "email": "matijakeber437@gmail.com",
-            "groupIds": []
+            "groupIds": [
+                1
+            ]
         },
         {
             "id": 4,
             "username": "piskotek123",
             "password": "321321p",
             "email": "klklkjfj",
-            "groupIds": [3]
+            "groupIds": [
+                3,
+                1,
+                2
+            ]
         }
     ],
     "toDos": [
