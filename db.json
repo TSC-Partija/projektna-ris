@@ -1,16 +1,17 @@
 {
-    "userIdCounter": 3,
-    "groupIdCounter": 1,
-    "toDoIdCounter": 12,
+    "userIdCounter": 4,
+    "groupIdCounter": 3,
+    "toDoIdCounter": 14,
     "users": [
         {
             "id": 1,
             "groupIds": [
-                1
+                1,
+                2
             ],
             "username": "bruih",
             "email": "bruih@example.com",
-            "password": "geslo"
+            "password": "Geslo"
         },
         {
             "id": 2,
@@ -27,6 +28,13 @@
             "password": "geslo",
             "email": "matijakeber437@gmail.com",
             "groupIds": []
+        },
+        {
+            "id": 4,
+            "username": "piskotek123",
+            "password": "321321p",
+            "email": "klklkjfj",
+            "groupIds": [3]
         }
     ],
     "toDos": [
@@ -89,7 +97,7 @@
                 1
             ],
             "toDo": "oknsgoajhgjpolkadgjiobadsihfvaewh",
-            "finished": false,
+            "finished": true,
             "deadline": "2024-01-19"
         },
         {
@@ -117,12 +125,41 @@
             "toDo": "djlaaa",
             "finished": true,
             "deadline": "2023-05-04"
+        },
+        {
+            "id": 13,
+            "owner": 1,
+            "groupIds": [
+                2
+            ],
+            "toDo": "lete\u010di odred",
+            "finished": true,
+            "deadline": "2023-05-16"
+        },
+        {
+            "id": 14,
+            "owner": 4,
+            "groupIds": [],
+            "toDo": "Oditi v trgovino",
+            "finished": false,
+            "deadline": "2023-05-05"
         }
     ],
     "groups": [
         {
+            "owner": 1,
             "id": 1,
             "name": "jabadabadu"
+        },
+        {
+            "owner": 1,
+            "id": 2,
+            "name": "testna skupina"
+        },
+        {
+            "owner": 4,
+            "id": 3,
+            "name": "\u0161tudenti 2002"
         }
     ]
 }

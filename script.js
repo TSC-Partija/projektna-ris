@@ -156,3 +156,20 @@ function newElement() {
     }
   }
 }
+var optionsButton = document.getElementById('options-button');
+var optionsWindow = document.getElementById('options-window');
+var createGroup = document.getElementById('skupina');
+var addToGroup = document.getElementById('dodajskupina');
+var changePassword = document.getElementById('spremenigeslo');
+
+optionsButton.addEventListener('click', function() {
+  optionsWindow.classList.toggle('show');
+});
+
+window.addEventListener("click", (event) => {
+  if (event.target !== optionsButton && event.target !== optionsWindow && event.target !== createGroup && event.target !== addToGroup && event.target !== changePassword) {
+    if(optionsWindow.classList.contains("show")){
+      optionsWindow.classList.toggle('show');
+    }
+  }
+});

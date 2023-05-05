@@ -114,3 +114,78 @@ input {
 .addBtn:hover {
   background-color: #bbb;
 }
+
+#options-button {
+  position: absolute;
+  left: 1px;
+  top: 23px;
+  padding-bottom: 6px;
+  padding-right: 2px;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-size: 30px;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: #000;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#options-button:hover{
+  background-color: #404040;
+  cursor: pointer;
+}
+
+#options-window {
+  position: fixed;
+  left: -300px;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: left 0.5s ease;
+  overflow-y: auto;
+  z-index: 9;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#options-window.show {
+  left: 0;
+}
+
+#options{
+  color: black;
+}
+
+.nastavitve{
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: #888;
+  color:white;
+  font-size: 18px;
+  transition: 0.2s;
+  margin-bottom: 5px;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.nastavitve:hover{
+  background: #111;
+}
+
+a{
+  text-decoration: none;
+}

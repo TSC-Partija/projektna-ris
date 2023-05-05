@@ -46,6 +46,14 @@ $_SESSION['expire_time'] = time() + $sess_expiration;
 </head>
 
 <div id="myDIV" class="header">
+    <div id="options-button">|||</div>
+        <div id="options-window">
+        <h2 id="options">NASTAVITVE</h2>
+        <hr/>
+        <a href="dodajSkupino.php"><p id="skupina" class="nastavitve">Ustvari skupino</p></a>
+        <a href="dodajvskupino.php"><p id="dodajskupina" class="nastavitve">Dodaj v skupino</p></a>
+        <a href="changePass.php"><p id="spremenigeslo" class="nastavitve">Spremeni geslo</p></a>
+    </div>
     <h2 style="margin:5px;">Moja Opravila</h2>
     
         <input type="text" id="todo" placeholder="Naslov...">
