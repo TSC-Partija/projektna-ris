@@ -1,13 +1,14 @@
 {
     "userIdCounter": 4,
-    "groupIdCounter": 3,
-    "toDoIdCounter": 14,
+    "groupIdCounter": 4,
+    "toDoIdCounter": 15,
     "users": [
         {
             "id": 1,
             "groupIds": [
                 1,
-                2
+                2,
+                4
             ],
             "username": "bruih",
             "email": "bruih@example.com",
@@ -16,7 +17,8 @@
         {
             "id": 2,
             "groupIds": [
-                1
+                1,
+                4
             ],
             "username": "supak",
             "email": "supak@example.com",
@@ -147,8 +149,18 @@
             "owner": 4,
             "groupIds": [],
             "toDo": "Oditi v trgovino",
-            "finished": false,
+            "finished": true,
             "deadline": "2023-05-05"
+        },
+        {
+            "id": 15,
+            "owner": 1,
+            "groupIds": [
+                2
+            ],
+            "toDo": "jsfkjhljgk",
+            "finished": true,
+            "deadline": "2023-06-10"
         }
     ],
     "groups": [
@@ -166,6 +178,11 @@
             "owner": 4,
             "id": 3,
             "name": "\u0161tudenti 2002"
+        },
+        {
+            "id": 4,
+            "name": "eugh",
+            "owner": 2
         }
     ]
 }
