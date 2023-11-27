@@ -46,12 +46,8 @@ $_SESSION['expire_time'] = time() + $sess_expiration;
 </head>
 
 <div id="myDIV" class="header">
-    <img id = "options-button"
-    src="images/Parti-zan_logo.svg"
-    alt="|||"
-    height="60"
-    width="70" />
-    <div id="options-window">
+    <div id="options-button">|||</div>
+        <div id="options-window">
         <h2 id="options">NASTAVITVE</h2>
         <hr/>
         <a href="dodajSkupino.php"><p id="skupina" class="nastavitve">Ustvari skupino</p></a>

@@ -1,7 +1,7 @@
 {
-    "userIdCounter": 4,
+    "userIdCounter": 5,
     "groupIdCounter": 4,
-    "toDoIdCounter": 15,
+    "toDoIdCounter": 17,
     "users": [
         {
             "id": 1,
@@ -43,6 +43,13 @@
                 1,
                 2
             ]
+        },
+        {
+            "id": 5,
+            "username": "grohar",
+            "password": "groharjevaSvadba",
+            "email": "gaberGarbscic@boolean.si",
+            "groupIds": []
         }
     ],
     "toDos": [
@@ -61,7 +68,7 @@
             "owner": 2,
             "groupIds": [],
             "toDo": "majske igre :P",
-            "finished": false,
+            "finished": true,
             "deadline": "31\/5\/2023"
         },
         {
@@ -161,6 +168,22 @@
             "toDo": "jsfkjhljgk",
             "finished": true,
             "deadline": "2023-06-10"
+        },
+        {
+            "id": 16,
+            "owner": 5,
+            "groupIds": [],
+            "toDo": "Bej\u017ei na EMP",
+            "finished": false,
+            "deadline": "2023-11-27"
+        },
+        {
+            "id": 17,
+            "owner": 5,
+            "groupIds": [],
+            "toDo": "ahajsdbj",
+            "finished": false,
+            "deadline": "2023-11-27"
         }
     ],
     "groups": [
