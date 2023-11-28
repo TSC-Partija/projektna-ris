@@ -104,11 +104,21 @@ input {
   width: 25%;
   background: #d9d9d9;
   color: #555;
-  float: left;
   text-align: center;
   font-size: 16px;
   cursor: pointer;
   transition: 0.3s;
+  display: inline-block;
+}
+
+.addSelect{
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  text-align: center;
+  font-size: 16px;
+  display: inline-block;
 }
 
 .addBtn:hover {
@@ -116,22 +126,29 @@ input {
 }
 
 #options-button {
-  /*position: absolute;*/
-  left: 1vh;
-  top: 5vh;
-  padding-bottom: 6px;
-  padding-right: 2px;
-  border: 1px solid white;
-  border-radius: 2px;
+  position: absolute;
+  left: 0.5vh;
+  margin-top: 1.5vh;
   font-size: 30px;
   transform: translateY(-50%);
-  z-index: 10;
-  background-color: #000;
+  z-index: 9;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+#logo{
+  margin-top: 1vh;
+  padding-bottom: 0.7vh;
+  padding-top: 0.7vh;
+  padding-right: 0.3vh;
+  padding-left: 0.3vh;
+  border: 1px solid white;
+  border-radius: 2px;
+  transform: translateY(-50%);
+  background-color: #000;
 }
 
 #options-button:hover{
@@ -149,7 +166,7 @@ input {
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   transition: left 0.5s ease;
   overflow-y: auto;
-  z-index: 9;
+  z-index: 10;
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -163,6 +180,18 @@ input {
 
 #options{
   color: black;
+}
+
+#taskDiv{
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#groups2{
+  display: inline-block;
 }
 
 .nastavitve{
